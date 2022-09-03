@@ -1,0 +1,221 @@
+body{
+	background-color: #648dd2  ;
+	font-family:sans-serif;
+   font-size: 14px;
+
+}
+#cabecera{
+	background:url(meiras.jpg) no-repeat center center fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+	background-color:  #000000 ;
+	
+	}
+#titulo{
+	padding-top: 40px;
+	padding-right: 400px;
+	height: 100px;
+
+ 	font: oblique normal 50px cursive;
+ 	color:#086A87;
+}
+#menu{
+	font-family:sans-serif; 
+	height: 50px;
+	border-top:1px solid #ddd;
+   	background-color: #ffffff ;
+  	width:70%;
+ 	font-size: 15px;
+	margin:auto;
+   	line-height: 15px;
+	
+   
+		}
+#menu ul{
+	margin:0px;
+	padding:0px;
+
+   }
+#menu li{
+	list-style-type:none;
+	float:left;
+	border-right:1px solid #f5f5f0;
+	height: 50px;
+	width:150px;
+   
+ } 
+#menu li a{
+ 	display:block;
+   text-decoration: none;
+	width: 140px;
+   padding:17px 5px;
+	height: 16px;
+   color: #444;
+	}
+#menu li a:hover{
+	background-color:#C4C1C1;
+   
+   color: #fff;
+   border-bottom: 2px solid #ddd;
+ 
+	 }
+	 
+div ul ul{
+display: none;
+}
+@media (min-width: 800px) {
+  div ul ul {
+    display: none;
+    position:absolute;
+  }
+}
+div ul li:hover > ul {
+  display:flex;
+  flex-direction: line;
+  color:#fee;
+  padding-left:2rem;
+  font-size: 14px;
+}
+div ul li:hover > ul a{
+	}
+  @media (min-width: 800px) {
+  div ul li:hover > ul {
+    padding-left:2rem;
+    background:#A49B9B;
+    opacity: 0.95;
+  }
+  
+ div ul li:hover > ul a{
+    color:#fee;
+  }
+  
+  #submenu li{
+    
+      display:flex;
+      flex-direction: row;
+    
+    }
+    #submenu  li:hover, li a:hover{
+      background:#C4C1C1;
+     
+    }
+  
+  
+
+#contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #648dd2 ;
+	height: 1500px;
+   margin-top:1px;
+
+
+}
+
+#cuerpo{
+	
+	width:60%;
+	padding: 10px;
+	padding-top: 50px;
+	text-align: justify;
+	text-indent: 3%;
+	line-height: 22px;
+	}
+#cuerpo h1{
+
+	font: oblique normal 28px cursive;
+}
+#cuerpo h2{
+
+	font: oblique normal 22px cursive;
+	}
+#cuerpo pre{
+text-indent: 0%;
+font: oblique normal 14px cursive;
+line-height: 26px;
+
+}
+#item2 {
+	font-family:sans-serif;  
+  	width:9%;
+ 	font-size: 14px;
+	margin:0px;
+	padding:0px;
+ 	}
+#item2 ul{
+	list-style-type: none;
+	
+	text-decoration: none;
+
+
+}
+#item2 ul li{
+	text-align: center;
+	display:block;
+	height:50px;
+	list-style-type: none;
+   color: #444;
+   border-bottom: 1px solid #dddddd;
+   padding: 10x 15px;
+ }
+ #item2 li a{
+	padding: 17px ;
+   text-decoration: none;
+   color: #444;
+}
+#item2 li a:link, #item2 li a:visited{
+	font-family:sans-serif; 
+	display:block;
+   color: #444;
+}
+
+#item2 li a:hover {
+  background-color: #336699;
+  color: #ffffff;}
+
+
+#creditos{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+	background-color: #F7F7EB;
+   height: 200px;
+	}
+#info{
+	font-family:sans-serif; 
+	
+	border-top:1px solid #ddd;
+   text-align: right;
+   background-color: #F7F7EB;
+   width:70%;
+ 	font-size: 10px;
+	margin:auto;
+   line-height: 15px;
+	padding: 10px;
+	padding-top: 50px;
+	
+}
+
+table { width: 200px;
+margin-right: auto; 
+}
+caption { font-size: 2em;
+font-weight: bold; }
+thead { background-color: #eaeaea; }
+tbody { font-family: Arial, sans-serif;
+font-size: .90em; }
+tbody td { border-bottom: 1px #B7B4B4 solid;
+padding-left: 25px; }
+tfoot { background-color: #eaeaea;
+font-weight: bold;
+text-align: center; }
+
+#sudoku { border-collapse: collapse; border: solid thick; }
+#sudoku colgroup, table#sudoku tbody { border: solid medium; }
+#sudoku td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
