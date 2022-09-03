@@ -1,0 +1,406 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Autos LP </title>
+<link rel="stylesheet" href="estilos.css"
+</head>
+<body>
+<p><b>Mercedes Benz e350d<b></p>
+<style>
+			.slide {
+				position: relative;
+				box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+				margin-top: 26px;
+			}
+
+			.slide-inner {
+				position: relative;
+				overflow: hidden;
+				width: 70%
+				height: calc( 300px + 3em);
+			}
+
+			.slide-open:checked + .slide-item {
+				position: static;
+				opacity: 100;
+			}
+
+			.slide-item {
+				position: absolute;
+				opacity: 0;
+				-webkit-transition: opacity 0.6s ease-out;
+				transition: opacity 0.6s ease-out;
+			}
+
+			.slide-item img {
+				display: block;
+				height: auto;
+				max-width: 55%;
+			}
+
+			.slide-control {
+				background: rgba(0, 0, 0, 0.28);
+				border-radius: 55%;
+				color: #fff;
+				cursor: pointer;
+				display: none;
+				font-size: 40px;
+				height: 40px;
+				line-height: 35px;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translate(0, -50%);
+				cursor: pointer;
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+				text-align: center;
+				width: 40px;
+				z-index: 10;
+			}
+
+			.slide-control.prev {
+				left: 2%;
+			}
+
+			.slide-control.next {
+				right: 2%;
+			}
+
+			.slide-control:hover {
+				background: rgba(0, 0, 0, 0.8);
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1,
+			#slide-2:checked ~ .control-2,
+			#slide-3:checked ~ .control-3{
+			}
+
+			.slide-indicador {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+
+			.slide-indicador li {
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+			.slide-circulo {
+				color: #828282;
+				cursor: pointer;
+				display: block;
+				font-size: 35px;
+			}
+
+			.slide-circulo:hover {				
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+			#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+			#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo{ 
+				color: #428bca;
+			}
+
+			#titulo {
+				width: 50%;
+				position: absolute;
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				font-size: 27px;
+				color: rgba(255, 255, 255, 1);
+				font-family: 'Open Sans', sans-serif;
+				z-index: 9999;
+				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slide">
+			<div class="slide-inner">
+				<input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+				<div class="slide-item">
+					<img src="mercedes1.jpg">
+				</div>
+				<input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="mercedes2.jpg">
+					</div>			
+				<input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="mercedes3.jpg">
+					</div>
+
+
+				<label for="slide-3" class="slide-control prev control-1">‹</label>
+				<label for="slide-2" class="slide-control next control-1">›</label>
+				<label for="slide-1" class="slide-control prev control-2">‹</label>
+				<label for="slide-3" class="slide-control next control-2">›</label>
+				<label for="slide 2" class="slide-control prev control-3">‹</label>
+				<label for="slide-1" class="slide-control next control-3">›</label>
+
+	
+				<ol class="slide-indicador">
+	
+					<li>
+						<label for="slide-1" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-2" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-3" class="slide-circulo">•</label>
+					</li>
+				</ol>
+			</div>
+		</div>
+
+<p>Precio: 31000$</p>
+<p>kilometraje:89000km</p>
+<p>combustible: diésel</p>
+<p>año: 2016</p>
+<p>caja de cambios: automática</p>
+<p>potencia: 258cv</p>
+<p>color: gris</p>
+<p>motor: 2.987cc 6 cilindros en V</p>
+<p><b>DESCRIPCIÓN</b><p>
+Mercedes e350d con acabado amg line en estupendo estado con este equipamiento:
+<ul>
+<li type="screenplay">Control de velocidad activo DISTRONIC</li>
+<li type="screenplay">Control de ángulo muerto</li>
+<li type="screenplay">Cámara de 360º</li>
+<li type="screenplay">Paquete de retrovisores</li>
+<li type="screenplay">Faros MULTIBEAM Led</li>
+<li type="screenplay">Head-up display</li>
+<li type="screenplay">AMG Line Interior</li>
+<li type="screenplay">Paquete KEYLESS-GO</li>
+<li type="screenplay">Asientos delanteros con calefacción</li>
+<li type="screenplay">Memorias en asientos delanteros</li>
+<li type="screenplay">Climatización THERMOTRONIC de 3 zonas</li>
+<li type="screenplay">Paquete Night</li>
+<li type="screenplay">Techo corredizo panorámico eléctrico</li>
+<li type="screenplay">AMG Line Exterior</li>
+<li type="screenplay">Cortinas puertas laterales y cristal trasero</li>
+<li type="screenplay">Tapicería de cuero napa</li>
+<li type="screenplay">Pintura metalizada</li>
+<li type="screenplay">Navegación COMAND Online</li>
+<li type="screenplay">Sonido surround Burmester</li>
+<Llantas de aleación de 51 cm (20″) (delante 245/35, detrás 275/30) multirradio AMG</li>
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Mercedes Benz 12 meses,certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p>
+<p> a mínimo interés, entregamos vehículos a toda la península.</p>
+<p><b>Porsche 718 cayman GTS<b></p>
+<p><img src="porsche.jpg" border="1" width="700" height="300"></p>
+		
+<p>Precio: 84000$</p>
+<p>kilometraje:39000km</p>
+<p>combustible: gasolina</p>
+<p>año: 2019</p>
+<p>caja de cambios: automática</p>
+<p>potencia: 366cv</p>
+<p>color: rojo</p>
+<p>motor: 3995cc 6 cilindros en boxer </p>
+<p><b>DESCRIPCIÓN</b><p>
+Porsche 718 cayman gts en estupendo estado con este equipamiento:
+<ul>
+<li type="screenplay">Ayuda de aparcamiento</li>
+<li type="screenplay">Faros bixenon con LED</li>
+<li type="screenplay">Suspensión activa PASM</li>
+<li type="screenplay">Asientos delanteros con calefacción</li>
+<li type="screenplay">Asientos deportivos Plus</li>
+<li type="screenplay">Climatizador bizona</li>
+<li type="screenplay">cronómetro analógico y digital(Paquete Sport Chrono)</li>
+<li type="screenplay">Asientos en alcántara y cuero artificial e interior en cuero artificial</li>
+<li type="screenplay">Cristales traseros tintados</li>
+<li type="screenplay">Recubrimiento interior del techo y pilar A en Alcantara negro</li>
+<li type="screenplay">Módulo de navegación para PCM</li>
+<li type="screenplay">Llantas de aleación de 51 cm (delante 235/35 R20, detrás 265/35 R20) diseño Carrera S</li>
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Porsche Approve 12 meses,certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p>
+<p> a mínimo interés, entregamos vehículos a toda la península.</p>
+<p><b>Audi rs3 sportback</b></p>
+<p><img src="audirs3 1.jpg" border="1" width="700" height="300"></p>
+
+<p>Precio: 44000$</p>
+<p>kilometraje:40000km</p>
+<p>combustible: gasolina</p>
+<p>año: 2016</p>
+<p>caja de cambios: automática</p>
+<p>potencia: 367cv</p>
+<p>color: negro</p>
+<p>motor: 2.480cc 5 cilindros en línea</p>
+<p><b>DESCRIPCIÓN</b></p>
+<p>Se vende espectacular Audi RS3 Sportback,con un amplio equipamiento:</p>
+<ul>
+<li type="screenplay">Paquete de asistencia al conductor</li>
+<li type="screenplay">Camara de visión trasera</li>
+<li type="screenplay">Faros LED</li>
+<li type="screenplay">Asientos delanteros deportivos</li>
+<li type="screenplay">Asientos deportivos S delanteros</li>
+<li type="screenplay">Cristales oscuros en parte trasera</li>
+<li type="screenplay">Llave de confort «Keyless-Entry»</li>
+<li type="screenplay">Techo corredizo eléctrico de cristal</li>
+<li type="screenplay">Escape RS-Sport (sonido más deportivo)</li>
+<li type="screenplay">Paquete brlilo estilo negro RS 3</li>
+<li type="screenplay">Tapicería de cuero Napa fina con acolchado de rombos</li>
+<li type="screenplay">MMI navegación</li>
+<li type="screenplay">Llantas de aleación 8 x 19 diseño de 5 radios «Rotor» óptica titanio mate</li>
+
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Audi 12 meses, certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p> 
+<p>a mínimo interés, entregamos vehículos a toda la península.</p>
+<p><b>Ferrari 488 spider</b></p>
+<p><img src="ferrari 488.jpg" border="1" width="700" height="300"></p>
+
+<p>Precio: 240000$</p>
+<p>kilometraje:9800km</p>
+<p>combustible: gasolina</p>
+<p>año: 2017</p>
+<p>caja de cambios:automática</p>
+<p>potencia: 670cv</p>
+<p>color: rojo</p>
+<p>motor: 3902cc  8 cilindros en V </p>
+<p><b>DESCRIPCIÓN</b></p>
+<p>Se vende espectacular Ferrari 488 spider con un amplio equipamiento:</p>
+<ul>
+    <li type="screenplay">Pinzas de freno de color Rosso Corsa</li>
+    <li type="screenplay">Tapas de ruedas de fibra de carbono</li>
+    <li type="screenplay">Escudos Scuderia Ferrari en aletas</li>
+    <li type="screenplay">Llantas de 20" forjadas diamantadas</li>
+                <li type="screenplay">Área conductor de fibra de carbono y ledes en el volante</li>
+    <li type="screenplay">Consola central de fibra de carbono</li>
+    <li type="screenplay">Moldura de entrada exterior de fibra de carbono</li>
+    <li type="screenplay">Color de las alfombras</li>
+    <li type="screenplay">Cinturones de seguridad de color</li>
+    <li type="screenplay">Cavallino bordado en el reposacabezas</li>
+    <li type="screenplay">Extintor orientable</li>
+    <li type="screenplay">Asientos full-electric</li>
+    <li type="screenplay">Costuras especiales de color a petición</li>    
+    <li type="screenplay">AFS (Faros delanteros adaptativos)</li>
+    <li type="screenplay">Elevador delantero</li>
+    <li type="screenplay">Equipamiento funcional</li>
+    <li type="screenplay">Sistema HELE (High Emotion Low Emission)</li>
+    <li type="screenplay">Cámara de aparcamiento de atrás.</li>
+    <li type="screenplay">Sensores de aparcamiento delanteros</li>
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Ferrari 12 meses y mantenimiento los 7 primeros años, certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p> 
+<p>a mínimo interés, entregamos vehículos a toda la península.</p>
+<p>Mclaren GT</p>
+<p><img src="mclaren gt.jpg" border="1" width="700" height="300"></p>
+
+
+<p>Precio: 227900$</p>
+<p>kilometraje:20km</p>
+<p>combustible: gasolina</p>
+<p>año: 2020</p>
+<p>caja de cambios:automática</p>
+<p>potencia: 620cv</p>
+<p>color: plata</p>
+<p>motor: 3994cc 8 cilindros en V </p>
+<p><b>DESCRIPCIÓN</b></p>
+<p>Se vende espectacular Mclaren GT con un amplio equipamiento:</p>
+    <li type="screenplay">Sensores de asistencia de estacionamiento traseros y delanteros</li>
+    <li type="screenplay">Aire acondicionado automático bizona</li>
+    <li type="screenplay">detector de luz</li>
+    <li type="screenplay">Portón trasero eléctrico</li> 
+    <li type="screenplay">Regulador de velocidad</li>
+    <li type="screenplay">Espejos laterales eléctricos</li>
+    <li type="screenplay">Asientos con calefacción</li>
+    <li type="screenplay">Asientos eléctricos</li>
+    <li type="screenplay">Sistema de navegación</li>
+    <li type="screenplay"> Techo panorámico </li>
+    <li type="screenplay"> Volante de cuero</li>
+    <li type="screenplay">Cierre centralizado sin llave</li>
+    <li type="screenplay">Pantalla táctil</li>    
+    <li type="screenplay"> Freno de estacionamiento electrónico</li>
+    <li type="screenplay">Espejo retrovisor interior con atenuación automática</li>
+    <li type="screenplay">Alarma</li>
+    <li type="screenplay">Asistente de luz de carretera</li>
+    <li type="screenplay">Dirección asistida</li>
+    <li type="screenplay">Luz de circulación diurna LED</li>
+     <li type="screenplay">Faros LED completos</li>
+     <li type="screenplay">Cierre centralizado con mando a distancia</li>    
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Mclaren qualified 12 meses, certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p> 
+<p>a mínimo interés, entregamos vehículos a toda la península.</p>
+<p>BMW  M4</p>
+<p><img src="bmwm4.jpg" border="1" width="700" height="300"></p>
+
+<p>Precio: 67000$</p>
+<p>kilometraje: 34640km </p>
+<p>combustible: gasolina</p>
+<p>año: 2018</p>
+<p>caja de cambios:automático</p>
+<p>potencia: 431cv</p>
+<p>color:Sakhir Orange II (metalizado </p>
+<p>motor: 2979cc 6 cilindros en línea </p>
+<p><b>DESCRIPCIÓN</b></p>
+<p>Se vende espectacular BMW M4 con un amplio equipamiento:</p>
+    <li type="screenplay">Shadow Line de brillo intenso BMW Individual con contenido ampliado</li>
+    <li type="screenplay">Paquete de competición</li>
+    <li type="screenplay">Tornillos antirrobo para las llantas</li>
+    <li type="screenplay">Control de presión de neumáticos</li>
+    <li type="screenplay">Acceso confort</li>      
+    <li type="screenplay">Cámara para marcha atrás</li> 
+    <li type="screenplay">Paquete de retrovisores interior y exteriores</li>
+    <li type="screenplay">Retrovisor interior con ajuste automático antideslumbramiento</li>
+    <li type="screenplay">Reglaje eléctrico de los asientos, con memoria en el asiento del conductor</li>
+    <li type="screenplay">Paquete de compartimentos</li>
+    <li type="screenplay">Cinturones de seguridad M</li>
+    <li type="screenplay">Molduras interiores Blue Shadow con moldura de acent. color negro brillo intenso</li>      
+    <li type="screenplay">Lavado de faros</li> 
+    <li type="screenplay">Control de distancia en aparcamiento (PDC)</li>
+    <li type="screenplay">Sensor de lluvia, incluyendo accionamiento automático de las luces de cruce</li>
+    <li type="screenplay">Climatizador</li>
+    <li type="screenplay">Control de crucero con función de freno</li>
+    <li type="screenplay">Faro de LED adaptativo</li>
+    <li type="screenplay">Paquete de iluminación</li>      
+    <li type="screenplay">Asistente para luz de carretera</li> 
+    <li type="screenplay">Desactivación del airbag del acompañante</li>
+    <li type="screenplay">Sistema de navegación Professional</li>
+    <li type="screenplay">Head-up display</li>
+    <li type="screenplay">TeleServices</li>
+    <li type="screenplay">Dispositivo manos libres con interfaz USB</li>
+    <li type="screenplay">Techo M en color antracita</li>
+    <li type="screenplay">Speed Limit Info</li>
+    <li type="screenplay">Combinación tela/cuero con estructura de carbono</li>
+    <li type="screenplay">Calefacción de los asientos delanteros</li>
+    <li type="screenplay">Surround View</li>
+    <li type="screenplay">Sistema de sonido surround Harman Kardon</li>
+    <li type="screenplay">Llamada de Emergencia Inteligente</li>
+       <li type="screenplay">Suspensión M adaptativa</li> <li type="screenplay">Real Time Traffic Information</li>
+    <li type="screenplay">Suspensión M adaptativa</li>
+    <li type="screenplay">Cambio con embrague doble M con Drivelogic</li>  
+<p>Vehículo en perfecto estado, con garantía en servicio oficial BMW 24 meses, certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p> 
+<p>a mínimo interés, entregamos vehículos a toda la península.</p>
+<p>LAMBORGHINI AVENTADOR SVJ</p>
+<p><img src="lambo.jpg" border="1" width="700" height="300"></p>
+
+<p>Precio: 519000$</p>
+<p>kilometraje: 2500km </p>
+<p>combustible: gasolina</p>
+<p>año: 2020</p>
+<p>caja de cambios:automático</p>
+<p>potencia: 770cv</p>
+<p>color:</p>
+<p>motor:  6498cc 12 cilindros en V </p>
+<p><b>DESCRIPCIÓN</b></p>
+Se vende espectacular Lamborghini Aventador SVJ con amplio equipamiento:
+<li type="screenplay">Sensores de aparcamiento delanteros y traseros</li>
+<li type="screenplay">Paquete Carbon Skin</li>
+<li type="screenplay">Sistema de sonido Lamborghini Sensonum</li>
+<li type="screenplay">Cámara de visión trasera</li>
+<li type="screenplay">Paquete Style en Shiny Black</li>
+<li type="screenplay">Sistema de lift vehicle</li>
+<li type="screenplay">Paquete Visibilidad y Luz</li>
+<li type="screenplay">Sistema antirrobo por satélite</li>
+<li type="screenplay">Juego de llantas de 7 radios con bloqueo central</li>
+<li type="screenplay">Placas de protección de fibra de carbono personalizadas</li>
+<p>Vehículo en perfecto estado, con garantía en servicio oficial Lamborghini 12 meses, certificación de libre siniestrabilidad y kilometraje, posibilidad de financiación</p> 
+<p>a mínimo interés, entregamos vehículos a toda la península.</p>
+</body>
+</html>
